@@ -1,13 +1,20 @@
+@font-face {
+  font-family: "Playfair";
+  src: url("./assets/fonts/PlayfairDisplay-Regular.ttf");
+}
+
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-playfair: Playfair, "sans-serif";
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply dark:bg-black;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
