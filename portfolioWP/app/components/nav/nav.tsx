@@ -4,7 +4,7 @@ import "./nav.css";
 
 export function Nav() {
   return (
-    <main>
+    <main className="fixed">
       <nav className="App">
         <Link to="/" className="title">
           <RiHome2Fill />

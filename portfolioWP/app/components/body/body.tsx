@@ -5,8 +5,7 @@ export function Body() {
         <img
           src="/app/assets/robloxMemePt1-NoBG.png"
           alt="Roblox Meme"
-          height={500}
-          width={500}
+          className="w-max object-fill"
         />
       </div>
     </>
