@@ -1,15 +1,20 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
+import { RiHome2Fill } from "react-icons/ri";
+import "./nav.css";
 
 export function Nav() {
   return (
     <main>
       <nav className="App">
+        <Link to="/" className="title">
+          <RiHome2Fill />
+        </Link>
         <ul>
           <li>
-            <Link to={"/projects"}>Projects</Link>
+            <NavLink to="/projects">Projects</NavLink>
           </li>
           <li>
-            <Link to={"/socials"}>Socials</Link>
+            <NavLink to="/socials">Socials</NavLink>
           </li>
         </ul>
       </nav>
