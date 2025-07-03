@@ -1,11 +1,10 @@
-.active {
-  background-color: gray;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
 }
 
 nav .title {
@@ -33,6 +32,25 @@ nav ul li a {
   border-radius: 0.5rem;
 }
 
-nav ul li a:not(.active):hover {
-  background-color: gray;
+.buttons {
+  position: relative;
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+.buttons::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.4s ease-in-out;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+.buttons.active::before,
+.buttons:hover::before {
+  transform: translateX(-50%) scale(1);
 }

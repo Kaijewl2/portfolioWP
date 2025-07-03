@@ -4,20 +4,22 @@ import "./nav.css";
 
 export function Nav() {
   return (
-    <main className="fixed">
-      <nav className="App">
-        <Link to="/" className="title">
-          <RiHome2Fill />
-        </Link>
-        <ul>
-          <li>
-            <NavLink to="/projects">Projects</NavLink>
-          </li>
-          <li>
-            <NavLink to="/socials">Socials</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </main>
+    <nav>
+      <Link to="/" className="title">
+        <RiHome2Fill />
+      </Link>
+      <ul>
+        <li>
+          <NavLink to="/projects" className="buttons">
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/socials" className="buttons">
+            Socials
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 }
