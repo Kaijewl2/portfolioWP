@@ -5,11 +5,11 @@ import "./nav.css";
 export function Nav() {
   return (
     <nav>
-      <Link to="/" className="title">
+      <Link to="/" className="title pl-5">
         <RiHome2Fill />
       </Link>
-      <ul>
-        <li>
+      <ul className=" pr-15">
+        <li className="pr-20">
           <NavLink to="/projects" className="buttons">
             Projects
           </NavLink>

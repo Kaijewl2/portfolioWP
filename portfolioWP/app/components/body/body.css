@@ -2,6 +2,5 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  /* Adjust for header height if needed, e.g.: */
-  padding-top: 40px; /* Set this to your header's height */
+  padding-top: 40px;
 }
