@@ -1,0 +1,1 @@
+import{w as s,o as e}from"./chunk-QMGIS6GS-CHay9yT7.js";import{N as t}from"./nav-dz0nUURc.js";const o=s(function({}){return e.jsxs(e.Fragment,{children:[e.jsx(t,{}),e.jsx("div",{className:"flex flex-col items-center justify-center min-h-screen",children:e.jsx("h1",{className:"text-3xl text-center",children:"Give me a sec 💀🙏"})})]})});export{o as default};
